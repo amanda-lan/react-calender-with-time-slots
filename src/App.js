@@ -75,17 +75,13 @@ function App() {
                                 .map((timeSlot, index) => (
                             <Grid item xs={12} key={index}>
                                 <input type="radio"/> {timeSlot['name']}
-                                <label htmlFor="age1"/> {timeSlot['time_window']}
+                                <label/> {timeSlot['time_window']}
                             </Grid>
                             )) :
                             <>
                                 <Grid item xs={12}>
-                                    <input type="radio" disabled={true}/> am
-                                    <label htmlFor="age1"/> 00:00 - 07:00
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <input type="radio"disabled={true}/> pm
-                                    <label htmlFor="age1"/> 08:00 - 18:00
+                                    <input type="radio" disabled={true}/>
+                                    <label className="disabled">Time not available</label>
                                 </Grid>
                             </>
                         }

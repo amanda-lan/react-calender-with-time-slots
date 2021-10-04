@@ -53,3 +53,7 @@
   margin-left: 2%;
   text-align: left;
 }
+
+.App .disabled {
+  color: #a0a096;
+}
