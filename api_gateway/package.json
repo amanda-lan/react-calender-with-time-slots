@@ -1,0 +1,17 @@
+{
+  "name": "api_gateway",
+  "version": "1.0.0",
+  "description": "solve CORS origin issue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amanda Lan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
