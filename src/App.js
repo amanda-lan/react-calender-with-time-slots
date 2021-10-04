@@ -26,7 +26,6 @@ function App() {
     }
 
     const handleSearch = (text) =>{
-        console.log(text);
         if (text.length <= 4 ) {
             setText(text);
         }
@@ -35,7 +34,6 @@ function App() {
     useEffect(() => {
         const loadSlots = async () => {
             const response = await axios.get('http://localhost:3002?postcode=' + text);
-//            console.log(response.data)
             const disabledDatesArr = response.data.filter((d) => !d.available).map((d) => d.date);
             setDisabledDates(disabledDatesArr);
             setSlots(response.data)
